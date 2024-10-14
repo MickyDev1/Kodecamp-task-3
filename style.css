@@ -1,0 +1,158 @@
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .wrapper-left {
+    width: 55%;
+    padding: 15px 50px;
+    position: relative;
+  }
+  
+  .logo-container {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    right: 25px;
+  }
+  
+  .logo-container img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  header {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #086db8;
+    margin-top: 70px;
+    text-align: left;
+  }
+  
+  form {
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  form .inner-form-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 10px;
+  }
+  
+  form .inner-form {
+    width: 100%;
+  }
+  
+  form .inner-form label {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #000;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  
+  form .inner-form input,  form .inner-form select{
+    width: 100%;
+    height: 50px;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding-left: 1rem;
+  }
+  
+  form .inner-form .select {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+  
+  form .inner-form .select .selection {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+  }
+  
+  form .inner-form .select input {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .create-account {
+    width: 200px;
+    background-color: #086db8;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px 0 10px 0;
+    margin-top: 2rem;
+    border: none;
+    padding: 1rem 0;
+    right: 0;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+  }
+  
+  .wrapper-right {
+    width: 45%;
+    overflow: hidden;
+    background-image: url("./right_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .wrapper-right .overlay {
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .wrapper-right .text-holder {
+    z-index: 20;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wrapper-right .text-holder .kodeCamp {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 4rem;
+    right: 3rem;
+  }
+  
+  .wrapper-right .text-holder .join {
+    font-family: "poppins";
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    bottom: 6rem;
+    left: 3rem;
+  }

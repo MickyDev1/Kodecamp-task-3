@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper-left">
+        <div class="logo-container">
+          <img src="./img/kodecamp_logo.png" />
+        </div>
+
+        <h1>Sign Up</h1>
+
+        <form action="#" method="post">
+          <div class="inner-form-wrapper">
+            <div class="inner-form">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" required />
+            </div>
+            <div class="inner-form">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" required />
+            </div>
+          </div>
+
+          <div class="inner-form-wrapper">
+            <div class="inner-form">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="inner-form">
+              <label>Gender</label>
+              <div class="select">
+                <div class="selection">
+                  <input type="radio" checked="true" id="male" name="male" />
+                  <label for="male">male</label>
+                </div>
+                <div class="selection">
+                  <input type="radio" id="female" name="female" />
+                  <label for="female">female</label>
+                </div>
+                <div class="selection">
+                  <input type="radio" id="other" name="other" />
+                  <label for="other">other</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="inner-form-wrapper">
+            <div class="inner-form">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="inner-form">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="inner-form-wrapper">
+            <div class="inner-form">
+              <label for="educational-level">Educational Level</label>
+              <select
+                id="educational-level"
+                name="educational-level"
+                required
+              ></select>
+            </div>
+            <div class="inner-form">
+              <label for="experience-level">Experience Level</label>
+              <select
+                id="experience-level"
+                name="experience-level"
+                required
+              ></select>
+            </div>
+          </div>
+
+          <div class="inner-form">
+            <label for="tuay">Tell us about you</label>
+            <input type="text" id="tuay" name="tuay" required />
+          </div>
+
+          <button class="create-account" type="submit">create account</button>
+        </form>
+      </div>
+
+      <div class="wrapper-right">
+        <div class="overlay"></div>
+        <div class="text-holder">
+          <p class="kodeCamp">KodeCamp</p>
+          <p class="join">JOIN OUR NEXT COHORT</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
